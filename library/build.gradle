@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.ben-manes.versions'
-apply plugin: 'com.github.hierynomus.license'
+//apply plugin: 'com.github.ben-manes.versions'
+//apply plugin: 'com.github.hierynomus.license'
 
 android {
   compileSdkVersion COMPILE_SDK_VERSION as int
@@ -26,16 +26,16 @@ dependencies {
   implementation "androidx.fragment:fragment:${ANDROIDX_BASE_VERSION}"
 }
 
-license {
-
-  sourceSets {
-    main.java.srcDirs = android.sourceSets.main.java.srcDirs
-    main.resources.srcDirs = android.sourceSets.main.resources.srcDirs
-  }
-
-  excludes(["**/*.xml"])
-
-}
+//license {
+//
+//  sourceSets {
+//    main.java.srcDirs = android.sourceSets.main.java.srcDirs
+//    main.resources.srcDirs = android.sourceSets.main.resources.srcDirs
+//  }
+//
+//  excludes(["**/*.xml"])
+//
+//}
 
 pkginfo.name = ARTIFACT_NAME
-apply from: "${project.rootDir}/publish.gradle"
+//apply from: "${project.rootDir}/publish.gradle"
